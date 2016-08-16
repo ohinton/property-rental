@@ -1,6 +1,8 @@
-<li>{{announcement.date}}: {{announcement.title}}
+<li>
+  {{announcement.date}}: {{announcement.title}}
   <br>
   {{announcement.message}}
+  {{update-announcement announcement=announcement update="update"}}
   <button {{action 'delete' announcement}}>Delete</button>
 </li>
 <hr>

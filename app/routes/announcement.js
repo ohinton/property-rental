@@ -10,9 +10,18 @@ export default Ember.Route.extend({
       newAnnouncement.save();
       this.transitionTo('announcement');
     },
-  destroyAnnouncement(announcement) {
-    announcement.destroyRecord();
-    this.transitionTo('index');
-  }
+    update(announcement, params){
+      Object.keys(params).forEach(function(key){
+        if (params[key]!==undefined) {
+          announcement.set(key,params[key]);
+        }
+      });
+      announcement.save();
+      this.transitionTo('announcement');
+    },
+    destroyAnnouncement(announcement) {
+      announcement.destroyRecord();
+      this.transitionTo('index');
+    }
   }
 });

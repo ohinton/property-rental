@@ -2,12 +2,14 @@
 
 <ul>
   {{#each model as |announcement|}}
-     {{announcement-tile announcement=announcement destroyAnnouncement="destroyAnnouncement"}}
+     {{announcement-tile announcement=announcement destroyAnnouncement="destroyAnnouncement" update="update"}}
   {{/each}}
 </ul>
 
 {{new-announcement save2="save3"}}
 
 {{#link-to 'about'}}About{{/link-to}}
+<br>
 {{#link-to 'contact'}}Click here to contact us.{{/link-to}}
+<br>
 {{#link-to 'index'}}Home{{/link-to}}
