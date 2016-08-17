@@ -33,5 +33,14 @@
     "title": "Summer Special",
     "type": "sale",
     "message": "Book your summer vacation to Mexico and receive a huge discount!"
-  }]
+  }],
+
+  "cities": [{
+  "name": "Portland",
+  "country": "USA"
+}, {
+  "name": "Seattle",
+  "country": "USA"
+}]
+
 }
