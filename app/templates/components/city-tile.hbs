@@ -1,5 +1,7 @@
+Country: {{fullLocation}}
+
 <ul>
-  {{#each city.rentals as |rental|}}
-     {{rental-tile rental=rental}}
+  {{#each sortedRentals as |rental|}}
+     {{rental-tile rental=rental}} {{rental-cost rental}}
   {{/each}}
 </ul>
